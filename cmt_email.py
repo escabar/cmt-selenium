@@ -2,8 +2,8 @@
 
 import smtplib
 
-sender = 'supatel@corelogic.com'
-receivers = ['supatel@corelogic.com']
+sender = ''
+receivers = ['']
 
 message = '''This is a test message'''
 
@@ -16,7 +16,7 @@ except smtplib.socket.gaierror:
 else:
     try:
         #smtp_server.starttls()
-        #smtp_server.login('supatel@corelogic.com', 'LegoLazers2017!')
+        #smtp_server.login('', '')
         print('hello')
     except smtplib.SMTPAuthenticationError:
         print("Failed to Authenticate")
@@ -40,13 +40,13 @@ from email.MIMEMultipart import MIMEMultipart
 
 smtp_server = smtplib.SMTP(host='smtp.corelogic.com', port=25)
 smtp_server.starttls()
-smtp_server.login('supatel@corelogic.com', 'LegoLazers2017!')
+smtp_server.login('', '')
 
 msg = MIMEMultipart()
 
-msg['FROM'] = 'supatel@corelogic.com'
-msg['To'] = 'supatel@corelogic.com'
-msg['subject'] = 'test email'
+msg['FROM'] = ''
+msg['To'] = ''
+msg['subject'] = ''
 
 smtp_server.send_message(msg)
 '''

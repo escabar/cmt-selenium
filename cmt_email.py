@@ -8,7 +8,7 @@ receivers = ['']
 message = '''This is a test message'''
 
 try:
-    smtp_server = smtplib.SMTP(host='smtp.corelogic.com', port=25)
+    smtp_server = smtplib.SMTP(host='', port=25)
 
 except smtplib.socket.gaierror:
     print("Failed to connect to host")

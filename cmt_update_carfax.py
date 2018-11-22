@@ -15,9 +15,9 @@ def init_driver():
 
 
 def login_to_wm():
-    driver.find_element(by=By.ID, value='ctl00_cphMain_txtClientID').send_keys('033147')
-    driver.find_element(by=By.ID, value='ctl00_cphMain_txtUsername').send_keys('supatel')
-    driver.find_element(by=By.ID, value='ctl00_cphMain_txtPassword').send_keys('CMTInc2017!')
+    driver.find_element(by=By.ID, value='ctl00_cphMain_txtClientID').send_keys('')
+    driver.find_element(by=By.ID, value='ctl00_cphMain_txtUsername').send_keys('')
+    driver.find_element(by=By.ID, value='ctl00_cphMain_txtPassword').send_keys('')
     driver.find_element(by=By.ID, value='btnLogin').click()
     driver.implicitly_wait(2)
     #driver.find_element(by=By.ID, value='ui-id-1').send_keys(Keys.ENTER)
